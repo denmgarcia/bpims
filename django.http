@@ -1,0 +1,40 @@
+
+
+### List of insurance
+GET http://localhost:8000/insurance/
+
+### Get insurance by id
+GET http://localhost:8000/insurance/1/
+Content-Type: application/json
+
+### Edit specific field
+PUT http://localhost:8000/insurance/1/
+Content-Type: application/json
+
+{
+  "insurance_name": "Edit insurance",
+  "policy_number": "1101-Qwerty-2012",
+  "policy_type": "Life",
+  "provider": "Provide name",
+  "premium": "2000.79",
+  "start_date": "2026-03-11",
+  "end_date": "2030-03-11"
+}
+
+### Create Insurance
+POST http://localhost:8000/insurance/
+Content-Type: application/json
+
+{
+  "insurance_name": "Add insurance",
+  "policy_number": "1101-Qwerty-2030",
+  "policy_type": "Life",
+  "provider": "Provide name",
+  "premium": "2000.79",
+  "start_date": "2026-03-11",
+  "end_date": "2030-03-11"
+}
+
+### DELTE Insurance
+DELETE http://localhost:8000/insurance/4/
+Content-Type: application/json
